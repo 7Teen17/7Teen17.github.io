@@ -1,8 +1,8 @@
 :root {
   /* variables */
   --cg-black: rgb(30, 32, 32);
-  --cg-blue: rgb(36, 94, 255);
-  --cg-grey: rgb(243, 243, 243);
+  --cg-blue: rgb(98, 210, 156);
+  --cg-grey: rgb(47, 47, 47);
   --cg-white: rgb(255, 255, 255);
 }
 
@@ -13,10 +13,10 @@ html {
 body {
   background: var(--cg-grey);
   position: relative;
-  min-height: calc(100vh - 10px);
+  min-height: calc(100vh - 20px);
   padding: 0;
-  margin: 10px;
-  font-family: monospace;
+  margin: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* CSS for navigation */
@@ -38,6 +38,7 @@ body {
   color: var(--cg-white);
   padding: 0px 0px;
   border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
   /* Debug border */
   /* border: solid red; */
@@ -66,7 +67,6 @@ body {
 
 .navbar a:hover {
   color: var(--cg-blue);
-  text-decoration: underline;
 }
 
 .navbar a:active {
@@ -74,11 +74,19 @@ body {
 }
 
 .logo a {
-  font-family: Georgia;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.logo {
+  margin-left: 12px;
 }
 
 .logo a:hover {
   text-decoration: None;
+}
+
+a.selected {
+  text-decoration: underline;
 }
 
 main {
@@ -260,7 +268,7 @@ form {
   background-color: var(--cg-black);
   color: var(--cg-white);
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   width: 100%;
   height: 2.5rem;
   border-radius: 10px;
