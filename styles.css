@@ -13,9 +13,9 @@ html {
 body {
   background: var(--cg-grey);
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 10px);
   padding: 0;
-  margin: 0;
+  margin: 10px;
   font-family: monospace;
 }
 
@@ -37,6 +37,7 @@ body {
   background-color: var(--cg-black);
   color: var(--cg-white);
   padding: 0px 0px;
+  border-radius: 10px;
 
   /* Debug border */
   /* border: solid red; */
@@ -104,7 +105,7 @@ main {
   margin: 1em 0 2em 0;
 
   /* Debug border */
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
 }
 
 .item-link {
@@ -134,7 +135,7 @@ main {
   padding: 0 20px;
   margin: 0px;
   line-height: 1.5;
-  overflow: scroll;
+  /*overflow: scroll;*/
 
   flex-direction: column;
   text-align: center;
@@ -259,7 +260,8 @@ form {
   background-color: var(--cg-black);
   color: var(--cg-white);
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
   height: 2.5rem;
+  border-radius: 10px;
 }
