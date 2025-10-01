@@ -172,20 +172,20 @@ main {
 
 .about {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+
   border-radius: 5px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
-
 .about-image img {
-  max-width: 300px;
-  border-radius: 3px;
+  max-width: 400px;
+  border-radius: 100%;
   margin-right: 20px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
 }
 
 .about-text {
@@ -199,8 +199,13 @@ main {
 }
 
 .about-text p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--cg-white);
+}
+
+.about-text p + p {
+  margin-top: 40px;
 }
 
 /* CSS for resume page */
