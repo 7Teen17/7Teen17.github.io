@@ -39,6 +39,7 @@ body {
   padding: 0px 0px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 
   /* Debug border */
   /* border: solid red; */
@@ -61,6 +62,7 @@ body {
   margin: 0 12px;
   text-decoration: none;
   letter-spacing: 2px;
+  padding: 3px;
 
   font-family: monospace;
 }
@@ -86,7 +88,7 @@ body {
 }
 
 a.selected {
-  text-decoration: underline;
+  border-bottom: 2px solid var(--cg-blue);
 }
 
 main {
@@ -96,14 +98,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-.page-title {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  font-family: Georgia;
-}
-
 /* CSS for portfolio grid */
 
 .project {
