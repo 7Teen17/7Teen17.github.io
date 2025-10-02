@@ -276,7 +276,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -289,6 +289,18 @@ textarea {
 form {
   width: 500px;
   margin: 0 auto;
+  background-color: var(--cg-white);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
+}
+
+.submit {
+  border: 1px solid rgb(58, 164, 113);
+  background-color: var(--cg-blue);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* CSS for footer */
